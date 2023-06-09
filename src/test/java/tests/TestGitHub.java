@@ -7,10 +7,11 @@ public class TestGitHub extends TestBase {
 
     @Test
     void gitHubSoftAssertions() {
-        gitHubWikiPage
+        gitHubSelenidePage
                 .openGitHubSelenide()
-                .openTab("wiki")
-                .selectPage("SoftAssertions")
-                .findTestJUnit5();
+                .openTab("wiki");
+        gitHubSelenideWikiPage.selectPage("SoftAssertions");
+        softAssertionsPage.findTestJUnit5();
+
     }
 }
