@@ -2,7 +2,7 @@ package tests;
 
 import org.junit.jupiter.api.Test;
 
-public class TestGitHub extends TestBase {
+public class TestGitHubSelenide extends TestBase {
 
 
     @Test
