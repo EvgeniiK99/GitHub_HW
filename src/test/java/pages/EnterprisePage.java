@@ -5,7 +5,7 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class EnterprisePage {
     public EnterprisePage checkEnterprisePage() {
-        $("h4").shouldHave(text("GitHub for enterprises"));
+        $(".application-main").shouldHave(text("GitHub for enterprises"));
         return this;
     }
 }

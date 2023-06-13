@@ -1,11 +1,12 @@
 package pages;
 
 import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selenide.*;
 
 public class GitHubMainPage {
     public GitHubMainPage openMainPage() {
-        open("");
+        open(baseUrl);
         return this;
     }
     public GitHubMainPage selectMenu(String menu) {
